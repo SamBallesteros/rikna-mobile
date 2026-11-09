@@ -1,0 +1,11 @@
+{
+ "page": "dist/index.html",
+ "url": null,
+ "root": "dist",
+ "kind": "software",
+ "category": "civic rewards wallet",
+ "primary": "Scan to pay",
+ "rounds": 3,
+ "start": "2026-11-08T17:57:51.145Z",
+ "by": "gate.mjs --start"
+}

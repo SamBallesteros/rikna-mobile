@@ -1,22 +1,51 @@
 {
   "name": "rikna-mobile",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "expo-router/entry",
   "dependencies": {
+    "@expo-google-fonts/manrope": "^0.4.3",
+    "@expo/vector-icons": "^15.0.2",
+    "@noble/hashes": "^2.4.0",
     "expo": "~58.0.23",
+    "expo-constants": "~58.0.15",
+    "expo-crypto": "~58.0.7",
+    "expo-font": "~58.0.11",
+    "expo-linking": "~58.0.16",
+    "expo-localization": "~58.0.5",
+    "expo-router": "~58.0.30",
+    "expo-secure-store": "~58.0.2",
     "expo-status-bar": "~58.0.4",
+    "i18n-js": "^4.5.4",
     "react": "19.3.0",
-    "react-native": "0.88.1"
+    "react-dom": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-qrcode-svg": "^6.3.54",
+    "react-native-safe-area-context": "~5.11.1",
+    "react-native-screens": "~4.30.1",
+    "react-native-svg": "15.16.0",
+    "react-native-web": "^0.21.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
     "@types/react": "~19.3.0",
-    "typescript": "~6.0.3"
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3",
+    "eslint": "^9.39.5",
+    "eslint-config-expo": "~58.0.4"
   },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/ledger.test.ts tests/auth.test.ts",
+    "test:ui": "playwright test",
+    "export:web": "expo export --platform web",
+    "export:native": "expo export --platform android --platform ios --output-dir dist-native",
+    "preview": "node scripts/serve.mjs",
+    "lint": "expo lint"
   },
   "private": true
 }

@@ -6,6 +6,10 @@ node_modules/
 # Expo
 .expo/
 dist/
+dist-native/
+test-results/
+playwright-report/
+.taste-skill/chrome*/
 web-build/
 expo-env.d.ts
 

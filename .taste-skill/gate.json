@@ -1,0 +1,51 @@
+{
+ "start": "2026-11-08T17:57:51.145Z",
+ "round": 0,
+ "idle": 0,
+ "errors": 1,
+ "status": "error",
+ "history": [
+  {
+   "at": "2026-11-08T18:18:29.039Z",
+   "mode": "manual",
+   "status": "error",
+   "fails": 0,
+   "round": 0,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "dist/index.html",
+  "url": null,
+  "root": "dist",
+  "kind": "software",
+  "category": "civic rewards wallet",
+  "primary": "Scan to pay",
+  "rounds": 3,
+  "start": "2026-11-08T17:57:51.145Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "fp": "b00e5457529671a3",
+ "page": "dist/index.html",
+ "found": {
+  "fails": [],
+  "warns": [],
+  "crashed": [
+   "the copy (the page showed no <main>, <section> or <h1> to lint)",
+   "consistency.mjs could not walk 1440, 390",
+   "check.mjs could not run (exit 2: check: timed out)"
+  ],
+  "seconds": {
+   "consistency": 4,
+   "layout": 240
+  }
+ },
+ "open": [],
+ "waived": [],
+ "warnCount": 0,
+ "note": "the copy (the page showed no <main>, <section> or <h1> to lint); consistency.mjs could not walk 1440, 390; check.mjs could not run (exit 2: check: timed out)",
+ "at": "2026-11-08T18:18:29.039Z"
+}

@@ -1,25 +1,34 @@
 {
   "expo": {
-    "name": "rikna-mobile",
+    "name": "Rikna",
     "slug": "rikna-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/rikna-logo.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rikna.demo"
     },
     "android": {
+      "package": "com.rikna.demo",
+      "predictiveBackGestureEnabled": true,
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
+        "foregroundImage": "./assets/rikna-logo.png",
+        "backgroundColor": "#146375"
+      }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/rikna-logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-localization",
+      "expo-secure-store"
+    ],
+    "scheme": "rikna"
   }
 }
